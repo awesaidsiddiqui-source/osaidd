@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Osiad & Fatima ❤️</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            text-align: center;
+            padding: 40px;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        img {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 18px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            background-color: #ff6f91;
+            color: white;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff3f6c;
+            transform: scale(1.05);
+        }
+
+        #message {
+            margin-top: 25px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #ff3f6c;
+        }
+
+        .music-btn {
+            background-color: #845ec2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Osiad ❤️ Fatima</h1>
+        <h2>Idiot & Buba</h2>
+
+        <img src="photo.png" alt="Osiad and Fatima">
+
+        <div>
+            <button onclick="idiotClick()">Idiot</button>
+            <button onclick="bubaClick()">Buba</button>
+        </div>
+
+        <div>
+            <button class="music-btn" onclick="playMusic()">▶ Play Music</button>
+            <button class="music-btn" onclick="pauseMusic()">⏸ Pause Music</button>
+        </div>
+
+        <div id="message"></div>
+
+        <audio id="loveMusic" loop>
+            <source src="music.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script>
+        function idiotClick() {
+            document.getElementById("message").innerText = "He loves Buba ❤️";
+        }
+
+        function bubaClick() {
+            document.getElementById("message").innerText = "Buba loves Idiot ❤️";
+        }
+
+        function playMusic() {
+            document.getElementById("loveMusic").play();
+        }
+
+        function pauseMusic() {
+            document.getElementById("loveMusic").pause();
+        }
+    </script>
+
+</body>
+</html>
+
